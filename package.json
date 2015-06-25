@@ -1,0 +1,21 @@
+{
+  "name": "git-flow-bump-type",
+  "version": "1.0.0",
+  "description": "Determine the bump type based on git flow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "flow",
+    "bump",
+    "semver"
+  ],
+  "author": "Kyle Newsome",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "q": "^1.4.1"
+  }
+}
