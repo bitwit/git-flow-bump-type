@@ -5,8 +5,8 @@ module.exports = function (opts) {
   var defaultOpts = _.extend({
     //Branch versioning rules related
     majorBranch: 'remotes/origin/release',
-    minorBranch: 'remotes/origin/develop'
-    masterOnly: true,
+    minorBranch: 'remotes/origin/develop',
+    masterOnly: true
   }, opts || {});
 
   // First check if the commit is already tagged
