@@ -4,9 +4,8 @@ var _ = require('lodash');
 module.exports = function (opts) {
   var defaultOpts = _.extend({
     //Branch versioning rules related
-    majorBranch: 'release',
-    minorBranch: 'develop',
-    patchBranch: '*',
+    majorBranch: 'remotes/origin/release',
+    minorBranch: 'remotes/origin/develop'
     masterOnly: true,
   }, opts || {});
 

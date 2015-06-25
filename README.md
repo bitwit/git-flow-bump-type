@@ -26,20 +26,37 @@ gitFlowBumpType({/* options */})
 
 ### Options
 
-#####Defaults
+#### Defaults
 ```js
 gitFlowBumpType({
   masterOnly: true,
   majorBranch: 'remotes/origin/release',
-  minorBranch: 'remotes/origin/develop',
-  patchBranch: '*'
+  minorBranch: 'remotes/origin/develop'
 });
 ```
 
 ### options.masterOnly - Boolean
 Fail to determine a bump type if you aren't currently checked out on master
-
-### options.minorBranch
+If you determine versions from a branch other than `master`, make this false
 
 ### options.majorBranch
+The branch that should contain the current commit if a Major bump
+
+### options.minorBranch
+The branch that should contain the current commit if a Major bump
+
+### How it is intended to work
+
+There are a few assumptions being made when using this module:
+
+1. The commit you are determining a bump for has been merged and pushed to `master`
+2. You are trying to use automation, such as a continuous delivery server, to bump for you. Where only an individual commit is being examined and not all the code can be expected to be local.
+
+If that's not the case and you want to determine bumps from your local repository, simply override the defaults to 
+```
+{
+  majorBranch: 'release', //or whatever you call it
+  minorBranch: 'develop'
+}
+```
 
