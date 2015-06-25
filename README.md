@@ -49,7 +49,7 @@ The branch that should contain the current commit if a Major bump
 
 There are a few assumptions being made when using this module:
 
-1. The commit you are determining a bump for has been merged and pushed to `master`
+1. The commit you are determining a bump for has been merged to `master` and pushed to `origin`
 2. You are trying to use automation, such as a continuous delivery server, to bump for you. Where only an individual commit is being examined and not all the code can be expected to be local.
 
 If that's not the case and you want to determine bumps from your local repository, simply override the defaults to 
