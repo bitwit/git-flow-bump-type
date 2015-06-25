@@ -1,6 +1,6 @@
 {
   "name": "git-flow-bump-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Determine the bump type based on git flow",
   "main": "index.js",
   "scripts": {
